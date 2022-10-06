@@ -1,15 +1,11 @@
-var today = moment();
-$("#currentDay").text(today.format("ddd MMM/Do/YYYY"));
+
+setInterval(function() {
+$("#currentDay").html(moment().format("ddd MMM/Do/YYYY"))
+} , 1000);
 
 
 var presentHour = moment().format("HH")
 
-if(presentHour < 12){
-presentHour += "AM";}
-else {
-    presentHour = 12;
-    presentHour += "PM";
-}
 
 if(presentHour > 9){
     $("#9").addClass("past")}
@@ -35,39 +31,44 @@ else if(presentHour ==12) {
     $('#12').addClass("present")}
 else { $("#12").addClass("future")}
 
-if(presentHour > 1){
+if(presentHour > 13){
     $("#1").addClass("past")}
 else if(presentHour ==1) {
     $('#1').addClass("present")}
 else { $("#1").addClass("future")}
 
-if(presentHour > 2){
+if(presentHour > 14){
     $("#2").addClass("past")}
 else if(presentHour ==2) {
     $('#2').addClass("present")}
 else { $("#2").addClass("future")}
 
-if(presentHour > 3){
+if(presentHour > 15){
     $("#3").addClass("past")}
 else if(presentHour ==3) {
     $('#3').addClass("present")}
 else { $("#3").addClass("future")}
 
-if(presentHour > 4){
+if(presentHour > 16){
     $("#4").addClass("past")}
 else if(presentHour ==4) {
     $('#4').addClass("present")}
 else { $("#4").addClass("future")}
 
-if(presentHour > 5){
+if(presentHour > 17){
     $("#5").addClass("past")}
 else if(presentHour ==5) {
     $('#5').addClass("present")}
 else { $("#5").addClass("future")}
 
 
-$("button").click(function(event){
-  event.preventDefault;
-    
-})
 
+$("button").click(function(event){
+ event.preventDefault;
+   
+var taskValue = $(this).siblings(".description").val()
+console.log(taskValue)
+
+var time = $(this).parent.attr("#9");
+console.log(time)
+})
