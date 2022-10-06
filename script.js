@@ -1,7 +1,7 @@
 
-setInterval(function() {
+
 $("#currentDay").html(moment().format("ddd MMM/Do/YYYY"))
-} , 1000);
+
 
 
 var presentHour = moment().format("HH")
@@ -32,36 +32,43 @@ else if(presentHour ==12) {
 else { $("#12").addClass("future")}
 
 if(presentHour > 13){
-    $("#1").addClass("past")}
-else if(presentHour ==1) {
-    $('#1').addClass("present")}
-else { $("#1").addClass("future")}
+    $("#13").addClass("past")}
+else if(presentHour ==13) {
+    $('#13').addClass("present")}
+else { $("#13").addClass("future")}
 
 if(presentHour > 14){
-    $("#2").addClass("past")}
-else if(presentHour ==2) {
-    $('#2').addClass("present")}
-else { $("#2").addClass("future")}
+    $("#14").addClass("past")}
+else if(presentHour ==14) {
+    $('#14').addClass("present")}
+else { $("#14").addClass("future")}
 
 if(presentHour > 15){
-    $("#3").addClass("past")}
-else if(presentHour ==3) {
-    $('#3').addClass("present")}
-else { $("#3").addClass("future")}
+    $("#15").addClass("past")}
+else if(presentHour ==15) {
+    $('#15').addClass("present")}
+else { $("#15").addClass("future")}
 
 if(presentHour > 16){
-    $("#4").addClass("past")}
-else if(presentHour ==4) {
-    $('#4').addClass("present")}
-else { $("#4").addClass("future")}
+    $("#16").addClass("past")}
+else if(presentHour ==16) {
+    $('#16').addClass("present")}
+else { $("#16").addClass("future")}
 
 if(presentHour > 17){
-    $("#5").addClass("past")}
-else if(presentHour ==5) {
-    $('#5').addClass("present")}
-else { $("#5").addClass("future")}
+    $("#17").addClass("past")}
+else if(presentHour ==17) {
+    $('#17').addClass("present")}
+else { $("#17").addClass("future")}
 
-
+function renderLastTask() {
+    for( i = 9; i < 18; i++ ) {
+var toDo = localStorage.getItem(i) || []
+var textBox = document.getElementById(i)
+textBox.textContent = toDo
+}
+}
+renderLastTask()
 
 $("button").click(function(event){
  event.preventDefault;
@@ -69,6 +76,9 @@ $("button").click(function(event){
 var taskValue = $(this).siblings(".description").val()
 console.log(taskValue)
 
-var time = $(this).parent.attr("#9");
+var time = $(this).parent().children().eq(1).attr("id");
 console.log(time)
+
+localStorage.setItem(time,taskValue);
+
 })
