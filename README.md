@@ -8,6 +8,10 @@ Keeping track of an 8 hour day and the pace at which you need to move through ou
 
 I was able to do this by refrencing the moment() function too get up to date dates and time. Once that is done you need to establish an if function for each hour to let it knwo what color it need to be depending on if its in the past, present, or future. By using By using jquery and Javascript tools I coudl save the inputs into local storge saving them to the site for the users convenience.
 
+## Deployment Link
+
+https://mrwaynejames.github.io/schedule/
+
 ## Usage
 
 To create a task simply click within the textbox area in the hour you want to create a task. The text box will be colorcoded eiter grey,red, or green.
@@ -15,3 +19,27 @@ To create a task simply click within the textbox area in the hour you want to cr
 Once you have added your task. Click the blue save button to the right of the textbox that you filled out to lock your task their until you remove it. You can remove it simply by clicking back in to the box where the task is and backspacing on your keyboard.
 
 (images/scheduler.png)
+
+## License
+
+MIT License
+
+Copyright (c) [2022] [Jack McWilliams]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
