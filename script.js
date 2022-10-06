@@ -66,3 +66,8 @@ else if(presentHour ==5) {
 else { $("#5").addClass("future")}
 
 
+$("button").click(function(event){
+  event.preventDefault;
+    
+})
+
