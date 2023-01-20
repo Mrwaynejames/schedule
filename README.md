@@ -1,8 +1,7 @@
 # schedule
 
 ## Description
-
-Developign I developed was a work day schedulel to allow users to plan out the tasks of their day. Within this the scheudle was broken up by hour into 8 section labeled 9-5. Through out the day the scheudle will update the user about where they are at in the day. Any time slot that is in the past will be in grey, the present hour will be red, and the fututre hours will be in green. Don't worry about your tasks dispperating once you save a task it will remain their until you remove it.
+I developed was a work day schedulel to allow users to plan out the tasks of their day. Within this the scheudle was broken up by hour into 8 section labeled 9-5. Through out the day the scheudle will update the user about where they are at in the day. Any time slot that is in the past will be in grey, the present hour will be red, and the fututre hours will be in green. Don't worry about your tasks dispperating once you save a task it will remain their until you remove it.
 
 Keeping track of an 8 hour day and the pace at which you need to move through out your day can be a chellenge. This schedule not only helps you plan your day but let you knwo if you are on track by the hour.
 
